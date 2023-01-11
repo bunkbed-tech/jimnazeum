@@ -10,3 +10,7 @@ data_*/
 
 # Vim swp files
 *.sw*
+
+# Direnv
+.direnv/
+
