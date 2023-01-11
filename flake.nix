@@ -21,6 +21,7 @@
         name = "${project}-shell";
         commands = [{ package = "devshell.cli"; }];
         packages = with pkgs; [
+          # We don't include godot as a dependency because it is marked as unsupported on aarch64-darwin (i.e. M1)
           gitleaks
           go
           nixpkgs-fmt
